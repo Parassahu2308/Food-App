@@ -1,5 +1,5 @@
 var jwt = require("jsonwebtoken");
-const userModel = require("./models/userModels");
+const userModel = require("./models/userModel");
 const { JWT_key } = require("./secret");
 
 //Protect route
