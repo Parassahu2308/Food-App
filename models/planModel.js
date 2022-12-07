@@ -43,14 +43,37 @@ const planSchema = mongoose.Schema({
 const planModel = mongoose.model("planModel", planSchema);
 module.exports = planModel;
 
-(async function createPlan() {
-  let plan = {
-    name: "SuperChineseFood",
-    price: 10000,
-    discount: 100,
-    averageRating: 4,
-    duration: 5,
-  };
-  let data = await planModel.create(plan);
-  console.log(data);
-})();
+// (async function createPlan() {
+//   let plan = [
+//     {
+//       name: "SuperChineseFood",
+//       price: 10000,
+//       discount: 10,
+//       averageRating: 4,
+//       duration: 5,
+//     },
+//     {
+//       name: "ChineseFood",
+//       price: 10000,
+//       discount: 10,
+//       averageRating: 5,
+//       duration: 5,
+//     },
+//     {
+//       name: "SaladFood",
+//       price: 10000,
+//       discount: 10,
+//       averageRating: 2,
+//       duration: 5,
+//     },
+//     {
+//       name: "SouthFood",
+//       price: 10000,
+//       discount: 10,
+//       averageRating: 5,
+//       duration: 5,
+//     },
+//   ];
+//   let data = await planModel.create(plan);
+//   console.log(data);
+// })();

@@ -42,7 +42,7 @@ userRouter.use(protectedRoute);
 userRouter.route("/profile").get(getUser);
 
 //admin specific function
-userRouter.use(isAuthorised(["admin"]));
+userRouter.use(isAuthorised(["admin", "resturantowner"]));
 userRouter.route("/").get(getAllUser);
 
 module.exports = userRouter;
