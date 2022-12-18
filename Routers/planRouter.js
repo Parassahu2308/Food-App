@@ -25,6 +25,6 @@ planRouter.route("single/:id").get(getPlan);
 planRouter.use(isAuthorised(["admin", "resturantowner"]));
 planRouter.route("/crudplan").post(createPlan);
 
-planRouter.route("/curdPlan/:id").patch(updatePlan).delete(deletePlan);
+planRouter.route("/crud/:id").patch(updatePlan).delete(deletePlan);
 
 module.exports = planRouter;
